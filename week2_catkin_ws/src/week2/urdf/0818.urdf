@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="test_0818">
+
+  <link name="base_link">
+    <!-- <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/> 
+    </visual> -->
+  </link>
+
+  <link name="li_link1"> 
+    <!-- <origin xyz="0 0 0" rpy="0 0 0"/>  -->
+
+    <!-- <visual> 
+      <material>
+        <color rgba="150,40,200" />
+      </material>
+    </visual> -->
+  </link>
+  <link name="li_link2" />
+  <link name="camera_link" />
+
+  <joint name="joint1" type="fixed">
+    <parent link="base_link"/>
+    <child link="li_link1"/>
+    <origin xyz="-0.0381 0.1524 0.0127" rpy="0 0 3.14159"/>
+  </joint>
+
+  <joint name="joint2" type="fixed">
+    <parent link="base_link"/>
+    <child link="li_link2"/>
+    <origin xyz="-0.2159 0.0381 0.0127" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="joint3" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.007 0.035 0.09" rpy="0 0 0"/>
+  </joint>
+
+</robot>

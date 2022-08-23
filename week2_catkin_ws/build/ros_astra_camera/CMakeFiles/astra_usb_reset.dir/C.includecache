@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cona/catkin_ws/src/ros_astra_camera/src/usb_reset.c
+fcntl.h
+-
+linux/usbdevice_fs.h
+-
+stdio.h
+-
+sys/ioctl.h
+-
+unistd.h
+-
+
